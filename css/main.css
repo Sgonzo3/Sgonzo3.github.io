@@ -225,12 +225,12 @@ footer h3 {
     flex: 1;
   }
 
-  #personal {
+  /* #personal {
     order: 0;
     max-width: 17%;
     background-color: rgba(235, 175, 35, 1);
     box-shadow: inset -5px 0 5px rgba(0, 0, 0, 0.46);
-  }
+  } */
 
   #intro {
     border-bottom-right-radius: 10px;

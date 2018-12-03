@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet">
-  <link href="js/main.js" rel="stylesheet">
   <title>Build a Portfolio</title>
 </head>
-
 <body>
-  <header>
-    <img src="img/S_Logo.png" alt="My Logo" class="logo">
-    <h1 class="title">antos Gonzalez</h1>
-  </header>
-
-  <nav>
+  <nav id="navbar">
+    <header>
+      <img src="img/S_Logo.png" alt="My Logo" class="logo">
+      <h1 class="title">antos Gonzalez</h1>
+    </header>
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="#intro" class="scrollable">Intro</a>
+        <a href="#welcome-section" class="scrollable">Intro</a>
       </li>
       <li class="nav-item">
-        <a href="#featured-work" class="scrollable">Featured Work</a>
+        <a href="#projects" class="scrollable">Featured Work</a>
       </li>
       <li class="nav-item">
-        <a href="#biography" class="scrollable">About</a>
+        <a href="#biography" class="scrollable">Biography</a>
       </li>
     </ul>
   </nav>
 
   <main>
     <section id="professional">
-      <article id="intro">
-        <h2 class="title">Front-End Developer</h2>
-        <p>This is sample text for the introduction to the portfolio site. This is sample text for the introduction to the portfolio site. This is sample text for the introduction to the portfolio site.</p>
-      </article>
-      <article id="featured-work">
+      <section id="welcome-section">
+        <h1 class="title">Front-End Web Developer</h1>
+        <p>
+          Currently looking to expand my skillset and challenge myself to grow through developing new projects and working with new technology. A sample of some of my projects are posted here as a reflection of what I am currently most interested or have recently completed. More details can be found on each project's documentation page. Feel free to reach out with any questions comments or suggestions there.
+        </p>
+      </section>
+      <section id="projects">
         <h2 class="title">Featured Work</h2>
         <div class="projects-container">
-          <div class="projects">
+          <div class="project-tile">
             <a href="https://sgonzo3.github.io/Pixel-Art-Maker/" target='_blank'>
             <img src="img/Pixel_Art_Project.png" alt="Pixel Art Maker Site" class="project-img"></a>
             <div class="project-descriptions">
               <h3 class="project-title">Pixel Art Maker</h3>
-              <p>This is a test caption for the Pixel Art Project. This is a test caption for the Pixel Art Project. This is a test caption for the Pixel Art Project.</p>
+              <p>An early project to develop a Pixel Art tool that allows the user to create designs on a customizable grid.</p>
             </div>
           </div>
-          <div class="projects">
+          <div class="project-tile">
             <a href="https://sgonzo3.github.io/Memory-Game/" target='_blank'>
             <img src="img/Memory_Game_Project.png" alt="Memory Game Project" class="project-img"></a>
             <div class="project-descriptions">
@@ -57,13 +55,25 @@
             </div>
           </div>
         </div>
-      </article>
+      </section>
     </section>
     <aside id="personal">
       <section id="biography">
+        <h2 class="title">Biography</h2>
         <img src="img/Profile_Pic.jpg" alt="Profile Picture" class="profile-pic">
-        <p class="biography">This is sample text for the Biography section. This is sample text for the Biography section. This is sample text for the Biography section. This is sample text for the Biography section. This is sample text for the Biography section. This is
-          sample text for the Biography section. </p>
+        <p class="biography">
+          After leaving my previous job as Pharmacy technician to complete a Bachelor's Degreee in December 2016, I became interested in programming as a way to provide change through my work and
+        </p>
+        <p>
+          In my work as a pharmacy technician...
+        </p>
+        <p>
+          After several months of learning to code as a hobby I applied for an opprtunity in the Grow with google U dacity Scholarship [link] and in January 2018 I was accepted into the challenge course. more info about the challenge course... In May after completeing the challenge course and I was offered a position in the full Udacity Front-End Web Developer Nanodegree program. Since graduating the program in October I have continued with my experience to learn through FreeCode Camp and contributing locally to projects through meetups.
+        </p>
+        <p>
+          I am interested in working with anyone on an interesting project idea or...
+          Feel free to contact me through any of the links below.
+        </p>
       </section>
     </aside>
   </main>
@@ -73,13 +83,21 @@
       <h3 class="title">Around the Web</h3>
       <ul class="link-list">
         <li class="link-item">
-          <a href="https://github.com/Sgonzo3" class="github" target='_blank'>
-            Github</a>
+          <a href="https://github.com/Sgonzo3" id="profile-link" class="github" target='_blank'>
+            Github
+          </a>
         </li>
         <li class="link-item">
           <a href="https://codepen.io/Sgonzo3/" class="codepen" target='_blank'>
-            CodePen</a>
+            CodePen
+          </a>
         </li>
+        <li class="link-item">
+          <a href="https://www.linkedin.com/in/sgonzo3/" class="linkedin" target='_blank'>
+            LinkedIn
+          </a>
+        </li>
+
       </ul>
     </section>
     <section id="watermark">
@@ -88,7 +106,7 @@
       <p>All Rights Reserved</p>
     </section>
   </footer>
-
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

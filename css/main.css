@@ -1,8 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   text-align: center;
   font-family: Roboto;
   margin: 0;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   color: rgba(235, 235, 235, 1);
@@ -14,46 +18,56 @@ body {
   text-align: center;
 }
 
-header {
+#navbar {
   width: 100%;
-  min-height: 48px;
+  order: 0;
+  background-color: rgba(32, 34, 36, 1);
+  padding: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+header {
   margin: 0;
   color: rgba(235, 175, 35, 1);
   background-color: rgba(32, 34, 36, 1);
+  order: 0;
+  /* align-self: flex-start; */
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .logo {
   max-height: 48px;
-  float: left;
-  margin: 1em 3px 1em 1em;
+  display: block;
+  margin: 0;
 }
 
 header .title {
-  padding-top: 0.66em;
   margin: 0;
   text-align: left;
   text-transform: uppercase;
-}
-
-nav {
-  width: 100%;
-  order: 0;
-  background-color: rgba(32, 34, 36, 1);
-  padding: 1em 0 1em 0;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
-  z-index: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  order: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .nav-item {
-  display: inline-block;
-  width: 32.5%;
   text-transform: uppercase;
+  align-content: space-between;
+  margin: 1em;
 }
 
 a:link {
@@ -72,31 +86,41 @@ a:hover {
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
 
 #professional {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   padding: 0;
   box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.26);
 }
 
-#intro {
-  padding: 1em;
+#welcome-section {
   color: rgba(32, 34, 36, 1);
-  /* background-color: rgba(32, 34, 36, 0.2); */
   background-color: rgba(235, 235, 235, 1);
+  min-height: 100vh;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 130px;
 }
 
-#featured-work {
+#welcome-section > p {
+  margin: 2em;
+}
+
+#projects {
   padding: 1em 0 1em 0;
   background-color: rgba(32, 34, 36, 1);
+}
+
+#professional h2 {
+  /* height: 132px; */
+  padding-top: 132px;
 }
 
 .projects-container {
@@ -105,7 +129,7 @@ main {
   width: 100%;
 }
 
-.projects {
+.project-tile {
   margin: 1em 0 1em 0;
 }
 
@@ -141,16 +165,27 @@ main {
   color: rgba(0, 0, 0, 1);
   /* background-color: rgba(235, 175, 35, 1); */
   background-color: rgba(235, 235, 235, 1);
+  overflow-y: hidden;
 }
 
 #biography {
 
 }
 
+#biography h2 {
+  /* height: 132px; */
+  padding-top: 132px;
+}
+
+#biography p {
+  margin: 2em;
+}
 .profile-pic {
+  height: auto;
   width: 25%;
   min-width: 96px;
-  margin: 0em 0.75em 0.5em -1em;
+  margin: 0em 2em 0.5em -1em;
+  position: relative;
   float: left;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -177,11 +212,13 @@ footer h3 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .link-item {
   display: inline-block;
-  width: 49.5%;
+  flex: 1;
   text-transform: uppercase;
 }
 
@@ -196,13 +233,14 @@ footer h3 {
 
   .project-descriptions {
     /* order: 0; */
-    min-width: 250px;
+    /* min-width: 250px; */
   }
 
   .project-img {
     flex: 1;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px;
     opacity: 0.66;
   }
 
@@ -214,25 +252,28 @@ footer h3 {
 
 @media screen and (min-width: 1001px) {
   main {
-    max-width: 1100px;
+    /* max-width: 1000px; */
+    /* margin: auto; */
+  }
+
+  #welcome-section {
+    /* max-width: 1000px; */
+    width: 100vw;
+    margin: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #projects {
+    max-width: 1000px;
     margin: auto;
   }
 
-  #professional{
-    order: 1;
-    box-shadow: none;
-    text-align: left;
-    flex: 1;
-  }
-
-  /* #personal {
-    order: 0;
-    max-width: 17%;
-    background-color: rgba(235, 175, 35, 1);
-    box-shadow: inset -5px 0 5px rgba(0, 0, 0, 0.46);
-  } */
-
-  #intro {
-    border-bottom-right-radius: 10px;
+  #personal {
+    /* max-width: 1000px;
+    margin: auto; */
+    height: 100vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 }

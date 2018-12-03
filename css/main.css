@@ -106,11 +106,13 @@ main {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  /* padding-top: 130px; */
+}
+#welcome-section > h1 {
   padding-top: 130px;
 }
-
 #welcome-section > p {
-  margin: 2em;
+  margin: 0 2em;
 }
 
 #projects {

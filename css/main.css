@@ -9,8 +9,8 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  color: rgba(235, 235, 235, 1);
-  background-color: rgba(32, 34, 36, 1);
+  color: rgba(0, 0, 0, 1);
+  background-color: white;
 }
 
 .title {
@@ -21,7 +21,7 @@ body {
 #navbar {
   width: 100%;
   order: 0;
-  background-color: rgba(235, 235, 235, 1);
+  background-color: white;
   /* background-color: rgba(32, 34, 36, 1); */
   padding: 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
@@ -103,7 +103,7 @@ main {
 
 #welcome-section {
   color: rgba(32, 34, 36, 1);
-  background-color: rgba(235, 235, 235, 1);
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +120,7 @@ main {
 
 #projects {
   padding: 1em 0 1em 0;
-  background-color: rgba(32, 34, 36, 1);
+  /* background-color: rgba(32, 34, 36, 1); */
 }
 
 #professional h2 {
@@ -136,6 +136,8 @@ main {
 
 .project-tile {
   margin: 1em 0 1em 0;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .project-img {
@@ -145,6 +147,8 @@ main {
 .project-descriptions {
   text-align: left;
   padding: 1em;
+  /* border: 1px solid black;
+  border-radius: 5px; */
 }
 
 .project-title {
@@ -169,7 +173,7 @@ main {
   padding: 1em;
   color: rgba(0, 0, 0, 1);
   /* background-color: rgba(235, 175, 35, 1); */
-  background-color: rgba(235, 235, 235, 1);
+  background-color: white;
   overflow-y: hidden;
 }
 
@@ -200,7 +204,7 @@ main {
 
 footer {
   width: 100%;
-  background-color: rgba(235, 235, 235, 1);
+  background-color: white;
   /* background-color: rgba(32, 34, 36, 1); */
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.26);
 
@@ -247,7 +251,7 @@ footer h3 {
     flex: 1;
     /* border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; */
-    border-radius: 10px;
+    border-radius: 5px;
     opacity: 0.66;
   }
 

@@ -165,8 +165,8 @@ main {
 }
 
 .project-tile>a {
-  border: 3px solid rgba(235, 175, 35, 0);
-
+  border-style: none;
+  padding: 0;
 }
 
 .project1 {

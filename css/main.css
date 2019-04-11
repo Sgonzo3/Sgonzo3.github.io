@@ -76,7 +76,8 @@ a:link {
   text-decoration: none;
   /* color: rgba(235, 235, 235, 1); */
   color: rgba(32, 34, 36, 1);
-
+  padding: 3px;
+  border: 3px solid rgba(235, 175, 35, 0);
 }
 
 a:visited {
@@ -85,8 +86,10 @@ a:visited {
 }
 
 a:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: rgba(32, 34, 36, 1);
+  border: 3px solid rgba(235, 175, 35, 1);
+  border-radius: 20px;
   /* color: rgba(235, 175, 35, 1); */
 }
 
@@ -159,6 +162,11 @@ main {
 .project-title {
   font-weight: normal;
   text-align: left;
+}
+
+.project-tile>a {
+  border: 3px solid rgba(235, 175, 35, 0);
+
 }
 
 .project1 {

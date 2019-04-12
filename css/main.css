@@ -183,7 +183,7 @@ main {
 
 #personal {
   text-align: left;
-  padding: 1em 0;
+  padding: 1em;
   color: rgba(0, 0, 0, 1);
   /* background-color: rgba(235, 175, 35, 1); */
   background-color: white;
@@ -309,7 +309,7 @@ footer h3 {
   #personal {
     /* max-width: 1000px;
     margin: auto; */
-    height: 100vh;
+    min-height: 100vh;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }

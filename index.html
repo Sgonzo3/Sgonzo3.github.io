@@ -1,105 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Santos Gonzalez">
-  <meta name="description" content="Santos Gonzalez Portfolio Site">
-  <meta name="keywords" content="Santos,Gonzalez,Developer,Portfolio,Javascript">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet">
-  <title>Santos Gonzalez Portfolio Site</title>
+  <link href="js/main.js" rel="stylesheet">
+  <title>Build a Portfolio</title>
 </head>
+
 <body>
-  <nav id="navbar">
-    <header>
-      <img src="img/S_Logo.png" alt="My Logo" class="logo">
-      <h1 class="title">antos Gonzalez</h1>
-    </header>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#welcome-section" class="scrollable">Intro</a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="scrollable">Featured Work</a>
-      </li>
-      <li class="nav-item">
-        <a href="#personal" class="scrollable">Biography</a>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <img src="img/S_Logo.png" alt="My Logo" class="logo">
+    <h1 class="title">antos Gonzalez</h1>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#intro" class="scrollable">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a href="#featured-work" class="scrollable">Featured Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#biography" class="scrollable">About</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
 
   <main>
     <section id="professional">
-      <section id="welcome-section">
-        <!-- Link shoiuld be set to jump to here, this should be a fullheihgt div img  or vid with  title overlaid ontop, scroll down to intro text.
-        same done for projects and biography titles
-      -->
-        <!-- <h1 class="title">Front-End Web Developer</h1> -->
-        <article class="intro-text">
-          <h2 class="title">Front-End Web Developer</h2>
-
-          <p>
-             Passionate about working with JavaScript and modern web frameworks to develop and deploy responsive and accessible Progressive Web Applications available across as many devices as possible, to users from all backgrounds.
-          </p>
-        </article>
-        <!-- <p>
-           Passionate about working with Javascript and modern web frameworks to develop and deploy responsive and accessible Progressive Web Applications available across as many devices as possible, to users from all backgrounds. A sample of my projects are posted here as a reflection of what I am currently most interested in or have recently completed. More details can be found on each project's documentation page. Feel free to reach out with any questions, comments or suggestions there.
-        </p> -->
-      </section>
-      <section id="projects">
-        <section id="projects-section">
-          <div class="projects-text">
-            <h2 class="title">Featured Work</h2>
-            <p>A sample of my projects are posted here as a reflection of what I am currently most interested in or have recently completed. More details can be found on each project's documentation page. Feel free to reach out with any questions, comments or suggestions there.</p>
-          </div>
-        </section>
-        <div class="project-tile">
-          <a href="https://sgonzo3.github.io/Neighborhood-Map-Geneva/" target='_blank'>
-          <img src="img/Neighborhood_Map_Geneva_Project.png" alt="Neighborhood Map: Geneva" class="project-img"></a>
-          <div class="project-descriptions">
-            <h3 class="project-title">Neighborhood Map: Geneva</h3>
-            <p>Completed as the final project of Front End Developer Nanodegree at Udacity. This project combined all of the work done so far to create a single page map application displaying an interactive list of recommended locations in Geneva, Switzerland. The project was built using React.js with Google’s Maps API, Wikipedia's Wikimedia API, and based on Facebook’s create-react-app. I ultimately deployed a responsive and accessible, Progressive Web App utilizing Service Worker caching, Asynchronous Fetching.</p>
-          </div>
-        </div>
-        <div class="project-tile">
-          <a href="https://sgonzo3.github.io/Bookshelf-App/" target='_blank'>
-          <img src="img/Bookshelf_Project.png" alt="Bookshelf App Project" class="project-img"></a>
-          <div class="project-descriptions">
-            <h3 class="project-title">Bookshelf App</h3>
-            <p>Completed as part of the Udacity Front End Web Developer Nanodegree, I deployed a digital bookshelf app displaying selected books from a database into three user selected categories, with a search page to select new books. This project was my first experience building a web application using React.js and JSX syntax.</p>
-          </div>
-        </div>
-        <div class="project-tile">
-          <a href="https://sgonzo3.github.io/Memory-Game/" target='_blank'>
-          <img src="img/Memory_Game_Project.png" alt="Memory Game Project" class="project-img"></a>
-          <div class="project-descriptions">
-            <h3 class="project-title">Memory Game Project</h3>
-            <p>An early project of the Udacity Front End Web Developer Nanodegree after completing the Grow with Google Challenge Course. The project was an opportunity to strengthen my skills in JavaScript and CSS to create an interactive user experience.</p>
-          </div>
-        </div>
+      <article id="intro">
+        <h2 class="title">
+          Hi I'm Santos,
+        </h2>
+        <p>
+          I'm a Web Developer passionate about working with JavaScript and modern web frameworks to develop and deploy responsive and accessible Progressive Web Applications available across as many devices as possible, to users from all backgrounds.
+        </p>
+      </article>
+      <article id="featured-work">
+        <h2 class="title">Featured Work</h2>
         <div class="projects-container">
-          <div class="project-tile">
-            <a href="https://sgonzo3.github.io/Pixel-Art-Maker/" target='_blank'>
-            <img src="img/Pixel_Art_Project.png" alt="Pixel Art Maker Site" class="project-img"></a>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Neighborhood-Map-Geneva" target='_blank'>
+              <img src="img/Neighborhood_Map_Geneva_Project.png" alt="Neighborhood Map: Geneva" class="project-img">
+            </a>
             <div class="project-descriptions">
-              <h3 class="project-title">Pixel Art Maker</h3>
-              <p>My final project of the Grow with Google Challenge Course. The Project combined all the material covered in the course and challenged us to create an interactive pixel art canvas using HTML, CSS , HTML canvas, and Query</p>
+              <h3 class="project-title">Neighborhood Map: Geneva</h3>
+              <p>
+                
+              </p>
             </div>
           </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Bookshelf-App" target='_blank'>
+            <img src="img/Bookshelf_Project.png" alt="Bookshelf App Project" class="project-img"></a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Bookshelf App</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Memory-Game" target='_blank'>
+            <img src="img/Memory_Game_Project.png" alt="Memory Game Project" class="project-img"></a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Memory Game</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Frogger-Clone-Arcade-Game" target='_blank'>
+              <img src="img/frogger-clone-arcade-game.png" alt="Frogger Clone Arcade Game" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Frogger Clone Arcade Game</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Pixel-Art-Maker" target='_blank'>
+              <img src="img/pixel-art-maker.png" alt="Pixel Art Maker" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Pixel Art Maker</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/js30-whack-a-mole-expanded" target='_blank'>
+              <img src="img/whack-a-mole-expanded.png" alt="JS30 Whack-A-Mole Expanded" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">JS30 Whack-A-Mole Expanded</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Drumkit" target='_blank'>
+              <img src="img/drumkit.png" alt="Drumkit" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Drumkit</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/Clock" target='_blank'>
+              <img src="img/clock.png" alt="clock" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Clock</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://sgonzo3.github.io/JS30-Flex-Panel-Expanded/" target='_blank'>
+              <img src="img/flex-panel-expanded.png" alt="Flex Panel Expanded" class="project-img">
+            </a>
+            <div class="project-descriptions">
+              <h3 class="project-title">Flex Panel Expanded</h3>
+              <p>
+
+              </p>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </article>
     </section>
     <aside id="personal">
       <section id="biography">
-        <h2 class="title">Biography</h2>
         <img src="img/Profile_Pic.jpg" alt="Profile Picture" class="profile-pic">
-        <p class="biography">
-          <p>I began learning to code as a hobby while travelling after completing my Undergraduate degree. After several months I applied for an opportunity in the Grow with Google Developer Scholarship Program, and in January 2018 I was accepted into the challenge course. At the time I saw the program as a chance to change careers and apply a new interest of mine to my professional work. That all changed for me once I began refining my projects after I was accepted into the second phase of the scholarship and offered a position in the full Udacity Front End Web Developer Nanodegree Program.</p>
-          <p>I became passionate about programming after uploading my first few projects on Github Pages. Getting feedback on the issues faced by users on mobile browsers and others using HDPI displays, drove me to find and repair problems I hadn't seen in my own testing during development. These responses changed how I developed my next projects and taught me not only to better test my code but to empathize with my users. I always enjoyed the process of quickly learning and implementing a new skill. The ability to create, refine, distribute, learn from feedback, and improve my work while having it reach people all over the world, almost immediately, is what captured my imagination and opened my eyes to why Front End Web Development in particular could be so rewarding.</P>
-          <p>Working in healthcare I enjoyed the fast-paced, detail oriented, multidisciplinary, nature of the work but my ability to provide support was often limited to who came in to our pharmacy. With web development I could have an idea, design a proof of concept, and share it with almost anyone for feedback in just a few hours. Knowing my work could have impact not just to those I knew directly or even those I originally intended but potentially anyone with internet access and a relatively modern web browser is both intimidating and inspiring. That more than anything else is what drives me.</p>
-        </p>
+        <div>
+          <p>
+            I began learning to code as a hobby while travelling after completing my Undergraduate degree. After several months I applied for an opportunity in the Grow with Google Developer Scholarship Program, and in January 2018 I was accepted into the challenge course. At the time I saw the program as a chance to change careers and apply a new interest of mine to my professional work. That all changed for me once I began refining my projects after I was accepted into the second phase of the scholarship and offered a position in the full Udacity Front End Web Developer Nanodegree Program.
+          </p>
+          <p>
+            I became passionate about programming after uploading my first few projects on Github Pages. Getting feedback on the issues faced by users on mobile browsers and others using HDPI displays, drove me to find and repair problems I hadn't seen in my own testing during development. These responses changed how I developed my next projects and taught me not only to better test my code but to empathize with my users. I always enjoyed the process of quickly learning and implementing a new skill. The ability to create, refine, distribute, learn from feedback, and improve my work while having it reach people all over the world, almost immediately, is what captured my imagination and opened my eyes to why Front End Web Development in particular could be so rewarding.
+          </P>
+          <p>
+            Working in healthcare I enjoyed the fast-paced, detail oriented, multidisciplinary, nature of the work but my ability to provide support was often limited to who came in to our pharmacy. With web development I could have an idea, design a proof of concept, and share it with almost anyone for feedback in just a few hours. Knowing my work could have impact not just to those I knew directly or even those I originally intended but potentially anyone with internet access and a relatively modern web browser is both intimidating and inspiring. That more than anything else is what drives me.
+          </p>
+
+        </div>
       </section>
     </aside>
   </main>
@@ -109,38 +169,29 @@
       <h3 class="title">Around the Web</h3>
       <ul class="link-list">
         <li class="link-item">
-          <a href="https://github.com/Sgonzo3" id="profile-link" class="github" target='_blank'>
-            Github
-          </a>
+          <a href="https://www.freecodecamp.org/sgonzo3" class="freecodecamp" target='_blank'>
+            freeCodeCamp</a>
         </li>
         <li class="link-item">
-          <a href="https://codepen.io/Sgonzo3/" class="codepen" target='_blank'>
-            CodePen
-          </a>
+          <a href="https://github.com/Sgonzo3" class="github" target='_blank'>
+            Github</a>
         </li>
         <li class="link-item">
           <a href="https://www.linkedin.com/in/sgonzo3/" class="linkedin" target='_blank'>
-            LinkedIn
-          </a>
+            LinkedIn</a>
         </li>
         <li class="link-item">
-          <a href="https://www.freecodecamp.org/sgonzo3" class="freecodecamp" target='_blank'>
-            freeCodeCamp
-          </a>
+          <a href="https://codepen.io/Sgonzo3/" class="codepen" target='_blank'>
+            CodePen</a>
         </li>
-        <!-- <li class="link-item">
-          <a href="" class="udacity" target='_blank'>
-            Udacity
-          </a>
-        </li>
-      </ul> -->
+      </ul>
     </section>
     <section id="watermark">
-      <p>Made by <a href="https://sgonzo3.github.io/">Santos Gonzalez</a> | Logo design by <a href="http://www.joegonzo.com/">Joseph Gonzalez</a> | All Rights Reserved</p>
-      <!-- <p>All Rights Reserved</p> -->
+      <p>Made by Santos Gonzalez</p>
+      <p>All Rights Reserved</p>
     </section>
   </footer>
-  <script src=""></script>
+
 </body>
 
 </html>

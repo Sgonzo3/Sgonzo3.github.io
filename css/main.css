@@ -10,6 +10,7 @@ body {
   background:url("https://www.toptal.com/designers/subtlepatterns/patterns/qbkls.png") rgba(235, 235, 235, 1);
 }
 
+
 .title {
   /* text-align: center; */
 }
@@ -59,7 +60,7 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -70,7 +71,6 @@ nav {
 }
 
 a:link {
-  text-decoration: none;
   color: rgba(35, 35, 35, 1);
   padding: 0.2rem;
   transition: 150ms ease-in-out;
@@ -80,8 +80,10 @@ a:visited {
   color: rgba(75, 75, 75, 1);
 }
 
-a:hover {
-  color: rgba(255, 194, 54, 1);
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: hsl(49, 100%, 55%);
   background: rgba(0, 0, 0, 0.36);
   border-radius: 0.5rem;
 }
@@ -118,6 +120,52 @@ main {
   width: 65vw;
 }
 
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2vmin;
+  width: 100%;
+}
+
+.event-tile {
+  margin: 1vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+/* card layout for projects */
+  border: 1px solid black;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  overflow: hidden;
+  transition: 200ms all ease;
+  background: rgba(0, 0, 0, 0.23)  
+}
+
+.event-tile:hover,
+.event-tile:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.event-description {
+  /* flex: 1; */
+  /* text-align: left; */
+  padding: 0.5rem;
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-tile img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  transition: 200ms ease-in-out;
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); */
+  /* border-bottom-left-radius: 50%; */
+  /* border-bottom-right-radius: 50%; */
+}
 #featured-work {
   /* padding: 1em 0 1em 0; */
   display: flex;
@@ -128,7 +176,6 @@ main {
   /* background-color: rgba(32, 34, 36, 1); */
   /* border: 1px solid black;
   border-radius: 0.5rem; */
-
 }
 
 #other-projects {
@@ -141,8 +188,6 @@ main {
   /* background-color: rgba(32, 34, 36, 1); */
   /* border: 1px solid black;
   border-radius: 0.5rem; */
-
-
 }
 
 #other-projects .projects-container{
@@ -179,7 +224,8 @@ main {
   border-right: none;
 } */
 
-#other-projects .projects:hover{
+#other-projects .projects:hover,
+#other-projects .projects:focus {
   flex: 4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
@@ -206,7 +252,8 @@ main {
   background: rgba(0, 0, 0, 0.23)
 }
 
-.projects:hover {
+.projects:hover,
+.projects:focus {
   background-color: rgba(0, 0, 0, 0.1);
   /* border: 1px solid black; */
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
@@ -229,7 +276,8 @@ main {
   /* border-bottom-right-radius: 50%; */
 }
 
-.project-img:hover {
+.project-img:hover,
+.project-img:focus {
   /* box-shadow: none; */
   /* border: 1px solid black; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -267,7 +315,8 @@ main {
   transition: transform 310ms ease, opacity 300ms ease;
   /* height: 1px; */
 }
-.projects:hover ul li {
+.projects:hover ul li,
+.projects:focus ul li {
   position: relative;
   transform: translateY(0);
   opacity: 1;
@@ -382,6 +431,16 @@ footer h3 {
     margin: auto;
   }
 
+  .nav-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
   #intro {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -389,8 +448,17 @@ footer h3 {
   #professional{
     /* order: 1; */
     /* box-shadow: none; */
-    text-align: left;
+    /* text-align: left; */
     flex: 1;
+  }
+
+  .event-tile {
+    border-radius: 0.5rem;
+  }
+
+  .event-tile img {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   .projects {

@@ -315,8 +315,33 @@ main {
   transition: transform 310ms ease, opacity 300ms ease;
   /* height: 1px; */
 }
+
 .projects:hover ul li,
 .projects:focus ul li {
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+  /* height: auto; */
+}
+
+.project-descriptions div{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-descriptions div p {
+  margin: 1vmin;
+  position: fixed;
+  transform: translateY(10000px);
+  opacity: 0;
+  transition: transform 310ms ease, opacity 300ms ease;
+  /* height: 1px; */
+}
+.projects:hover div p,
+.projects:focus div p {
   position: relative;
   transform: translateY(0);
   opacity: 1;

@@ -15,6 +15,10 @@ body {
   /* text-align: center; */
 }
 
+.name-title::first-letter {
+  font-size: 0;
+}
+
 header {
   width: 100%;
   /* min-height: 48px; */

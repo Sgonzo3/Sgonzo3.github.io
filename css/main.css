@@ -59,6 +59,9 @@ nav {
   flex: 4;
 }
 
+#biography {
+  padding: 5rem;
+}
 .nav-list {
   padding: 0;
   list-style: none;
@@ -216,7 +219,7 @@ main {
   justify-content: center;
   align-items: center;
   box-shadow: none;
-  transition: 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   border-radius: 0;
 }
 
@@ -373,16 +376,12 @@ main {
 
 #personal {
   text-align: left;
-  padding: 1em;
+  padding: 1rem;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   border: 1px solid black;
   border-bottom: none;
-}
-
-#biography {
-  /* text-align: center; */
 }
 
 #biography div {
@@ -473,7 +472,9 @@ footer h3 {
   #intro {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    margin: 5rem;
   }
+
   #professional{
     /* order: 1; */
     /* box-shadow: none; */
@@ -511,13 +512,18 @@ footer h3 {
     border-bottom-right-radius: 0.5rem;
   }
 
+  #intro {
+    margin: 5rem;
+    border-radius: 0.5rem;
+  }
+
   #personal {
     /* order: 0; */
     /* max-width: 17%; */
     /* box-shadow: inset -5px 0 5px rgba(0, 0, 0, 0.46); */
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-radius: 0.5rem;
     transition: all 200ms ease-in-out;
+    margin: 5rem;
   }
 
   /* #intro {
